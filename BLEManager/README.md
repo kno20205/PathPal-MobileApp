@@ -1,79 +1,40 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# PathPal - Indoornavigations-App mit BLE-Technologie
 
-# Getting Started
+## Projektzusammenfassung
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Die Nutzung von Smartphones zur Navigation ist allgegenwärtig, aber herkömmliche Navigationslösungen stoßen an ihre Grenzen, wenn es um komplexe Innenräume wie Flughäfen, Einkaufszentren und Krankenhäuser geht. Die Schwierigkeit liegt in der präzisen Positionsbestimmung, da GPS-Signale in Innenräumen oft nicht verfügbar sind.
 
-## Step 1: Start the Metro Server
+**PathPal** ist eine Indoornavigations-App, die speziell entwickelt wurde, um dieses Problem zu lösen. Die Hauptzielsetzung besteht darin, eine Lösung bereitzustellen, die es Nutzern ermöglicht, sich präzise in komplexen Innenräumen zu orientieren. Die App verwendet Bluetooth Low Energy (BLE) Ortungstechnologie, um die genaue Position von Nutzern innerhalb von Gebäuden zu bestimmen. Dies geschieht durch das Platzieren von Bluetooth-fähigen Beacons in den Räumlichkeiten. Die Indoornavigations-App nutzt die Signale dieser Beacons, um die Position des Nutzers in Echtzeit zu ermitteln und ihm eine präzise Wegführung durch das Gebäude zu bieten.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Hauptmerkmale
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- Präzise Indoornavigation in komplexen Innenräumen.
+- Nutzung von BLE-Beacons für die Positionsbestimmung.
+- Echtzeit-Wegführung und -Navigation.
+- Anpassbare Kartengrundlage für verschiedene Innenräume.
+- Prototyp entwickelt für potenzielle Kundenprojekte.
 
-```bash
-# using npm
-npm start
+### Herausforderungen
 
-# OR using Yarn
-yarn start
-```
+- Präzise Positionierung in Innenräumen.
+- Integration und Verwaltung von BLE-Beacons.
+- Entwurf einer benutzerfreundlichen Schnittstelle.
 
-## Step 2: Start your Application
+## Projektstatus
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Der aktuelle Stand des Projekts ist die Entwicklung des BLE Managers. Dieser Manager dient als Grundlage für die Ortungstechnologie per Bluetooth Low Energy (BLE). Hierbei werden BLE-Beacons in den Räumlichkeiten platziert, um genaue Standortdaten zu erfassen und sie in der PathPal-App zu verwenden.
 
-### For Android
+## Nächste Schritte
 
-```bash
-# using npm
-npm run android
+Die Entwicklung von PathPal ist ein fortlaufender Prozess. Die nächsten Schritte umfassen:
 
-# OR using Yarn
-yarn android
-```
+- Integration des BLE Managers in die Hauptanwendung.
+- Entwicklung der Nutzeroberfläche für die Indoornavigations-App.
+- Testen und Validieren der Genauigkeit der Standortdaten.
+- Benutzerfreundlichkeit und Leistungsoptimierung.
 
-### For iOS
+## Kontakt
 
-```bash
-# using npm
-npm run ios
+Für Fragen oder weitere Informationen können Sie sich gerne an [Ihre Kontaktdaten] wenden.
 
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Vielen Dank für Ihr Interesse an PathPal - der Indoornavigations-App mit BLE-Technologie. Wir sind bestrebt, eine Lösung zu schaffen, die die Navigation in komplexen Innenräumen revolutioniert.

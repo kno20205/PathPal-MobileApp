@@ -1,0 +1,157 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blemanager"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:4:5-105
+13-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:4:22-65
+14    <!--
+15      should normally only be needed on android < 12 if you want to:
+16      - activate bluetooth programmatically
+17      - discover local BLE devices
+18      see: https://developer.android.com/guide/topics/connectivity/bluetooth/permissions#discover-local-devices.
+19      Same as above, may still be wrongly needed by some manufacturers on android 12+.
+20    -->
+21    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+21-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:12:5-111
+21-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:12:22-71
+22    <uses-permission
+22-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:14:5-107
+23        android:name="android.permission.ACCESS_COARSE_LOCATION"
+23-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:14:22-78
+24        android:maxSdkVersion="28" />
+24-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:14:79-105
+25
+26    <uses-permission-sdk-23
+26-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:15:5-112
+27        android:name="android.permission.ACCESS_FINE_LOCATION"
+27-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:15:29-83
+28        android:maxSdkVersion="30" /> <!-- Only when targeting Android 12 or higher -->
+28-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:15:84-110
+29    <!--
+30      Please make sure you read the following documentation
+31      to have a better understanding of the new permissions.
+32      https://developer.android.com/guide/topics/connectivity/bluetooth/permissions#assert-never-for-location
+33    -->
+34    <!-- Needed if your app search for Bluetooth devices. -->
+35    <!--
+36      If your app doesn't use Bluetooth scan results to derive physical location information,
+37      you can strongly assert that your app doesn't derive physical location.
+38    -->
+39    <uses-permission
+39-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:29:5-30:71
+40        android:name="android.permission.BLUETOOTH_SCAN"
+40-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:29:22-70
+41        android:usesPermissionFlags="neverForLocation" /> <!-- Needed if you want to interact with a BLE device. -->
+41-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:30:22-68
+42    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Needed if your app makes the current device discoverable to other Bluetooth devices. -->
+42-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:32:5-76
+42-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:32:22-73
+43    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+43-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:34:5-78
+43-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:34:22-75
+44    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+44-->[com.facebook.flipper:flipper:0.182.0] /Users/User/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
+44-->[com.facebook.flipper:flipper:0.182.0] /Users/User/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
+45
+46    <uses-feature
+46-->[:react-native-ble-manager] /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/node_modules/react-native-ble-manager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-13:36
+47        android:name="android.hardware.bluetooth_le"
+47-->[:react-native-ble-manager] /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/node_modules/react-native-ble-manager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-53
+48        android:required="false" />
+48-->[:react-native-ble-manager] /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/node_modules/react-native-ble-manager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-33
+49
+50    <application
+50-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:36:5-55:19
+51        android:name="com.blemanager.MainApplication"
+51-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:37:7-38
+52        android:allowBackup="false"
+52-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:41:7-34
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.7.0] /Users/User/.gradle/caches/transforms-3/75e4635b66fa4e4e84e71b52579837ce/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+54        android:debuggable="true"
+55        android:icon="@mipmap/ic_launcher"
+55-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:39:7-41
+56        android:label="@string/app_name"
+56-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:38:7-39
+57        android:roundIcon="@mipmap/ic_launcher_round"
+57-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:40:7-52
+58        android:theme="@style/AppTheme"
+58-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:42:7-38
+59        android:usesCleartextTraffic="true" >
+59-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/debug/AndroidManifest.xml:8:9-44
+60        <activity
+60-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/debug/AndroidManifest.xml:11:9-111
+61            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+61-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/debug/AndroidManifest.xml:11:19-83
+62            android:exported="false" />
+62-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/debug/AndroidManifest.xml:11:84-108
+63        <activity
+63-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:43:7-54:18
+64            android:name="com.blemanager.MainActivity"
+64-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:44:9-37
+65            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+65-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:46:9-118
+66            android:exported="true"
+66-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:49:9-32
+67            android:label="@string/app_name"
+67-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:45:9-41
+68            android:launchMode="singleTask"
+68-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:47:9-40
+69            android:windowSoftInputMode="adjustResize" >
+69-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:48:9-51
+70            <intent-filter>
+70-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:50:9-53:25
+71                <action android:name="android.intent.action.MAIN" />
+71-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:51:13-65
+71-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:51:21-62
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:52:13-73
+73-->/Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PRE/BLEManager/android/app/src/main/AndroidManifest.xml:52:23-70
+74            </intent-filter>
+75        </activity>
+76
+77        <meta-data
+77-->[com.facebook.soloader:soloader:0.10.5] /Users/User/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+78            android:name="com.facebook.soloader.enabled"
+78-->[com.facebook.soloader:soloader:0.10.5] /Users/User/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+79            android:value="false" />
+79-->[com.facebook.soloader:soloader:0.10.5] /Users/User/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+80
+81        <provider
+81-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+82            android:name="androidx.startup.InitializationProvider"
+82-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+83            android:authorities="com.blemanager.androidx-startup"
+83-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+84            android:exported="false" >
+84-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+85            <meta-data
+85-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+86                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+86-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+87                android:value="androidx.startup" />
+87-->[androidx.emoji2:emoji2:1.0.0] /Users/User/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+88            <meta-data
+88-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/User/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+89-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/User/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+90                android:value="androidx.startup" />
+90-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/User/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+91        </provider>
+92    </application>
+93
+94</manifest>

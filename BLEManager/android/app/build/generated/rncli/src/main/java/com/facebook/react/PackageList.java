@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // react-native-ble-manager
 import it.innove.BleManagerPackage;
+// react-native-svg
+import com.horcrux.svg.SvgPackage;
 
 public class PackageList {
   private Application application;
@@ -58,7 +60,8 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
-      new BleManagerPackage()
+      new BleManagerPackage(),
+      new SvgPackage()
     ));
   }
 }

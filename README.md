@@ -1,4 +1,4 @@
-# PathPal - Indoornavigations-App mit BLE-Technologie
+# PathPal - Indoor-Navigationsystem für mobile Endgeräte ![PathPal Logo](/BLEManager/assets/PP_Logo_V2.png)
 
 ## Projektzusammenfassung
 
@@ -11,7 +11,6 @@ Die Nutzung von Smartphones zur Navigation ist allgegenwärtig, aber herkömmlic
 - Präzise Indoornavigation in komplexen Innenräumen.
 - Nutzung von BLE-Beacons für die Positionsbestimmung.
 - Echtzeit-Wegführung und -Navigation.
-- Anpassbare Kartengrundlage für verschiedene Innenräume.
 - Prototyp entwickelt für potenzielle Kundenprojekte.
 
 ### Herausforderungen
@@ -22,7 +21,9 @@ Die Nutzung von Smartphones zur Navigation ist allgegenwärtig, aber herkömmlic
 
 ## Projektstatus
 
-Der aktuelle Stand des Projekts ist die Entwicklung des BLE Managers. Dieser Manager dient als Grundlage für die Ortungstechnologie per Bluetooth Low Energy (BLE). Hierbei werden BLE-Beacons in den Räumlichkeiten platziert, um genaue Standortdaten zu erfassen und sie in der PathPal-App zu verwenden.
+Der aktuelle Stand des Projekts ist die Entwicklung des BLE Managers. Dieser Manager ist die grundlegende Komponente des PathPal-Projekts und demonstriert die Kernfunktionen, nämlich das Finden von BLE-Beacons. Durch die Integration des BLE Managers wird die Fähigkeit geschaffen, Bluetooth Low Energy (BLE) Beacons in den Räumlichkeiten zu identifizieren und deren Signale zu erkennen. Dies bildet die Grundlage für die präzise Ortungstechnologie, die in der PathPal-App verwendet wird, um Benutzern eine genaue Indoor-Navigation zu ermöglichen.
+
+Der BLE Manager ist der erste Schritt zur Realisierung des PathPal-Projekts und dient als Ausgangspunkt für die weitere Entwicklung und Integration von Raumumriss, API und Datenbank.
 
 ## Nächste Schritte
 
@@ -33,8 +34,6 @@ Die nächsten Schritte im PathPal-Projekt umfassen die Integration des Raumumris
 - [ ] **Raumumrissdaten importieren**: Importieren Sie Raumumrissdaten aus geeigneten Quellen oder erstellen Sie diese manuell.
 
 - [ ] **Raumumriss in App integrieren**: Implementieren Sie die Möglichkeit, den Raumumriss in der PathPal-App anzuzeigen, sodass Benutzer die Layouts von Gebäuden und Innenräumen visualisieren können.
-
-- [ ] **Benutzerdefinierte Kartengrundlage**: Ermöglichen Sie Benutzern die Auswahl und Anpassung der Kartengrundlage je nach Innenraum.
 
 ### Entwicklung der API
 
@@ -51,19 +50,3 @@ Die nächsten Schritte im PathPal-Projekt umfassen die Integration des Raumumris
 - [ ] **Datenbank erstellen**: Erstellen Sie die Datenbank unter Verwendung eines geeigneten Datenbankverwaltungssystems (z. B. PostgreSQL oder MySQL).
 
 - [ ] **Datenbankzugriff implementieren**: Implementieren Sie den Zugriff auf die Datenbank in der API, um Daten zu speichern und abzurufen.
-
-## Kanban Board für User Stories
-
-Für eine effektive Verwaltung dieser Aufgaben und User Stories empfehle ich die Verwendung eines Kanban-Boards. Hier ist ein einfaches Beispiel für die Verwendung von GitHub Projects, um Ihr Kanban-Board zu erstellen:
-
-1. **Projekt erstellen**: Erstellen Sie ein neues GitHub-Projekt mit dem Namen "PathPal Kanban Board".
-
-2. **Spalten erstellen**: Erstellen Sie Spalten, um den Fortschritt der Aufgaben zu verfolgen, z. B. "To Do", "In Bearbeitung", "Abgeschlossen".
-
-3. **Karten erstellen**: Erstellen Sie Karten für jede Aufgabe oder User Story und verschieben Sie sie entsprechend ihrem Fortschritt zwischen den Spalten.
-
-4. **Labels verwenden**: Verwenden Sie Labels, um Aufgaben nach Typ (Integration, Entwicklung, Datenbank) oder Priorität zu kennzeichnen.
-
-5. **Projekt verwalten**: Aktualisieren Sie das Kanban-Board regelmäßig, um den aktuellen Stand des Projekts widerzuspiegeln.
-
-Sie können GitHub Projects, Trello oder andere Projektmanagement-Tools Ihrer Wahl verwenden, um Ihr Kanban-Board zu erstellen und zu verwalten. Dies erleichtert die Planung und Verfolgung der nächsten Schritte im PathPal-Projekt.

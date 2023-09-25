@@ -26,3 +26,4 @@ com.blemanager.app-merged_res-24 /Users/User/Library/Mobile Documents/com~apple~
 com.blemanager.app-debug-25 /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PathPal/BLEManager/android/app/src/debug/res
 com.blemanager.app-main-26 /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PathPal/BLEManager/android/app/src/main/res
 com.blemanager.app-packaged_res-27 /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PathPal/BLEManager/node_modules/react-native-ble-manager/android/build/intermediates/packaged_res/debug
+com.blemanager.app-packaged_res-28 /Users/User/Library/Mobile Documents/com~apple~CloudDocs/Schule/5.Klasse/PathPal/BLEManager/node_modules/react-native-svg/android/build/intermediates/packaged_res/debug
